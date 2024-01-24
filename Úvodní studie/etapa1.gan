@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="ETAPA1" company="" webLink="http://" view-date="2021-05-01" view-index="0" gantt-divider-location="401" resource-divider-location="300" version="3.0.3000" locale="en_GB">
+    <description/>
+    <view zooming-state="default:10" id="gantt-chart">
+        <field id="tpd3" name="Name" width="206" order="0"/>
+        <field id="tpd4" name="Begin date" width="88" order="1"/>
+        <field id="tpd5" name="End date" width="88" order="2"/>
+        <option id="taskLabelDown" value="length"/>
+        <option id="color.recent">
+            <![CDATA[#000000 #ff3300 #ffff00 #0033cc #00ff33 #f4f4f4 #ffff33]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="20" name="Vývoj systému" color="#000000" meeting="false" start="2021-05-10" duration="260" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+            <task id="90" name="Zahájení" color="#ff3300" meeting="true" start="2021-05-11" duration="0" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <depend id="31" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="31" name="Prezentace systému" color="#8cb6ce" meeting="false" start="2021-05-11" duration="14" complete="0" thirdDate="2021-05-17" thirdDate-constraint="0" expand="true">
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="34" name="Analýza" color="#8cb6ce" meeting="false" start="2021-05-31" duration="60" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <depend id="46" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="40" name="Návrh systému" color="#8cb6ce" meeting="false" start="2021-05-31" duration="60" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <depend id="46" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="46" name="Akceptace návrhu" color="#ff3300" meeting="true" start="2021-08-23" duration="0" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <depend id="52" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="52" name="Implementace" color="#8cb6ce" meeting="false" start="2021-08-23" duration="45" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="48" name="Instalace systému" color="#8cb6ce" meeting="false" start="2021-10-25" duration="19" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <depend id="60" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="55" name="Tvorba uživatelské dokumentace" color="#8cb6ce" meeting="false" start="2021-10-18" duration="26" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <depend id="60" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="58" name="Uživatelské testování" color="#000000" meeting="false" start="2021-11-23" duration="48" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <task id="60" name="Příprava prostředí" color="#8cb6ce" meeting="false" start="2021-11-23" duration="13" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                    <depend id="65" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="65" name="Školení uživatelů" color="#8cb6ce" meeting="false" start="2021-12-10" duration="8" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                    <depend id="67" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="67" name="Testování uživateli" color="#8cb6ce" meeting="false" start="2021-12-22" duration="27" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                    <depend id="71" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="71" name="Akceptace funkčnosi" color="#ff3300" meeting="true" start="2022-01-28" duration="0" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <depend id="85" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="76" name="Nasazení" color="#000000" meeting="false" start="2022-01-28" duration="71" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <task id="85" name="Příprava prostředí" color="#8cb6ce" meeting="false" start="2022-01-28" duration="10" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                    <depend id="119" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="119" name="Školení uživatelů" color="#8cb6ce" meeting="false" start="2022-02-11" duration="12" complete="0" thirdDate="2021-04-01" thirdDate-constraint="0" expand="true">
+                    <depend id="121" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="121" name="Zvýšená podpora" color="#8cb6ce" meeting="false" start="2022-03-01" duration="47" complete="0" thirdDate="2021-04-01" thirdDate-constraint="0" expand="true">
+                    <depend id="123" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="123" name="Konec" color="#ff3300" meeting="true" start="2022-05-09" duration="0" complete="0" thirdDate="2021-04-01" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="126" name="Migrace dat" color="#8cb6ce" meeting="false" start="2021-05-31" duration="244" complete="0" thirdDate="2021-04-01" thirdDate-constraint="0" expand="true">
+                <depend id="123" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="129" name="Nastavení práv" color="#8cb6ce" meeting="false" start="2021-05-31" duration="244" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <depend id="123" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="131" name="Projektové řízení" color="#000000" meeting="false" start="2021-05-10" duration="260" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                <task id="133" name="Vedení" color="#8cb6ce" meeting="false" start="2021-05-10" duration="260" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                    <depend id="123" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="134" name="Koordinace" color="#8cb6ce" meeting="false" start="2021-05-10" duration="260" complete="0" thirdDate="2021-05-03" thirdDate-constraint="0" expand="true">
+                    <depend id="123" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

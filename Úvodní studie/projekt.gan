@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2021-05-01" view-index="0" gantt-divider-location="402" resource-divider-location="300" version="3.0.3000" locale="en_GB">
+    <description/>
+    <view zooming-state="default:10" id="gantt-chart">
+        <field id="tpd3" name="Name" width="210" order="0"/>
+        <field id="tpd4" name="Begin date" width="94" order="1"/>
+        <field id="tpd5" name="End date" width="94" order="2"/>
+        <option id="color.recent">
+            <![CDATA[#ffff33 #000000 #ff3300 #ffff00 #0033cc #00ff33 #f4f4f4]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="146" order="0"/>
+        <field id="tpc0" name="Datum začátku" width="75" order="1"/>
+        <field id="tpc1" name="Datum ukončení" width="75" order="2"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="7" name="Vyvoj systému" color="#000000" meeting="false" start="2021-05-17" duration="82" complete="0" thirdDate="2021-03-24" thirdDate-constraint="0" expand="true">
+            <task id="8" name="Zahájení" color="#ff3300" meeting="true" start="2021-05-17" duration="0" complete="0" thirdDate="2021-03-24" thirdDate-constraint="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="28" name="Návrh funkčnosti" color="#8cb6ce" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2021-05-17" duration="25" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true">
+                <depend id="30" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="30" name="Implementace" color="#8cb6ce" meeting="false" start="2021-06-21" duration="19" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true">
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="34" name="Uživatelské testování" color="#8cb6ce" meeting="false" start="2021-07-16" duration="18" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true">
+                <depend id="74" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="74" name="Nasazení" color="#8cb6ce" meeting="false" start="2021-08-11" duration="20" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true">
+                <depend id="36" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="36" name="Konec" color="#ff3300" meeting="true" start="2021-09-08" duration="0" complete="12" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true">
+                <depend id="44" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="38" name="Reálný provoz" color="#00ff33" meeting="false" start="2021-09-08" duration="247" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true">
+            <task id="44" name="Reálný provoz - ověření" color="#00ff33" meeting="false" start="2021-09-08" duration="50" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true">
+                <depend id="43" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="43" name="Kontrolní bod provozu" color="#ff3300" meeting="true" start="2021-11-17" duration="0" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true">
+                <depend id="48" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="48" name="Rutinní provoz" color="#00ff33" meeting="false" start="2021-11-17" duration="197" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="41" name="Podpora systému" color="#ffff33" meeting="false" start="2022-04-01" duration="126" complete="0" thirdDate="2022-04-01" thirdDate-constraint="1" expand="true">
+            <task id="76" name="Podpora systému" color="#ffff33" meeting="false" start="2022-04-01" duration="126" complete="0" thirdDate="2021-03-22" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <custom-property-definition id="tpc0" name="Datum začátku" type="date"/>
+        <custom-property-definition id="tpc1" name="Datum ukončení" type="date"/>
+        <resource id="0" name="Nasazení systému" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
